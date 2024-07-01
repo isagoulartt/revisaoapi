@@ -17,7 +17,7 @@ export default function BuscarCep(){
 
     return (
 <div className="content">
-    <h1>buscar endereço por CEP</h1>
+    <h1>Buscar endereço por CEP</h1>
     <input 
     type='text'
     value={cep}
@@ -25,6 +25,8 @@ export default function BuscarCep(){
     onChange={(e) => setCep (e.target.value)}>
     </input>
     <button onClick={fetchData}>buscar</button>
+    
+
 
     {endereco && (
 
